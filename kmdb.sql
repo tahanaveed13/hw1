@@ -221,4 +221,8 @@ FROM movies
 INNER JOIN studios ON movies.studio_id = studios.studio_id;
 
 
+SELECT movies.title, actors.name, roles.role_name
+FROM roles 
+INNER JOIN movies ON roles.movie_id = movies.movie_id
+INNER JOIN actors ON roles.actor_id = actors.actor_id;
 
