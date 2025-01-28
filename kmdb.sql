@@ -215,3 +215,10 @@ VALUES
     (3, 9, 'Bane'),
     (3, 10, 'John Blake'),
     (3, 11, 'Selina Kyle');
+
+SELECT movies.title, movies.year, movies.rating, studios.name
+FROM movies 
+INNER JOIN studios ON movies.studio_id = studios.studio_id;
+
+
+
