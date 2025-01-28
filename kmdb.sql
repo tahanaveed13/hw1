@@ -139,3 +139,36 @@
 -- TODO!
 
 
+DROP TABLE IF EXISTS studios;
+
+CREATE TABLE studios (
+    studio_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);
+
+DROP TABLE IF EXISTS movies;
+
+CREATE TABLE movies (
+    movie_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    year TEXT,
+    rating TEXT,
+    studio_id INTEGER
+);
+
+DROP TABLE IF EXISTS actors;
+
+CREATE TABLE actors (
+    actor_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);
+
+DROP TABLE IF EXISTS roles;
+
+CREATE TABLE roles (
+    role_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    movie_id INTEGER,
+    actor_id INTEGER,
+    role_name TEXT
+);
+
