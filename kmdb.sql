@@ -172,3 +172,46 @@ CREATE TABLE roles (
     role_name TEXT
 );
 
+INSERT INTO studios (name) 
+VALUES 
+    ('Warner Bros.');
+
+
+INSERT INTO movies (title, year, rating, studio_id) 
+VALUES 
+    ('Batman Begins', '2005', 'PG-13', 1),
+    ('The Dark Knight', '2008', 'PG-13', 1),
+    ('The Dark Knight Rises', '2012', 'PG-13', 1);
+
+
+INSERT INTO actors (name) 
+VALUES 
+    ('Christian Bale'),
+    ('Michael Caine'),
+    ('Liam Neeson'),
+    ('Katie Holmes'),
+    ('Gary Oldman'),
+    ('Heath Ledger'),
+    ('Aaron Eckhart'),
+    ('Maggie Gyllenhaal'),
+    ('Tom Hardy'),
+    ('Joseph Gordon-Levitt'),
+    ('Anne Hathaway');
+
+INSERT INTO roles (movie_id, actor_id, role_name) 
+VALUES 
+    (1, 1, 'Bruce Wayne'),
+    (1, 2, 'Alfred'),
+    (1, 3, 'Ras Al Ghul'),
+    (1, 4, 'Rachel Dawes'),
+    (1, 5, 'Commissioner Gordon'),
+    (2, 1, 'Bruce Wayne'),
+    (2, 6, 'Joker'),
+    (2, 7, 'Harvey Dent'),
+    (2, 2, 'Alfred'),
+    (2, 8, 'Rachel Dawes'),
+    (3, 1, 'Bruce Wayne'),
+    (3, 5, 'Commissioner Gordon'),
+    (3, 9, 'Bane'),
+    (3, 10, 'John Blake'),
+    (3, 11, 'Selina Kyle');
